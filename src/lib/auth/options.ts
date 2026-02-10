@@ -32,6 +32,13 @@ export const betterAuthOptions = (env: Env): BetterAuthOptions => {
             },
         },
 
+        advanced: {
+            defaultCookieAttributes: {
+                sameSite: "none",
+                secure: true
+            }
+        },
+
         plugins: [
             openAPI(),
             jwtPlugin(env),

@@ -21,7 +21,7 @@ app.use(
     }),
 );
 
-app.on(['POST', 'GET'], '/api/auth/*', (c) => {
+app.on(['POST', 'GET'], '/api/auth/*', async (c) => {
     const auth = createAuth(c.env)
     return auth.handler(c.req.raw);
 });
