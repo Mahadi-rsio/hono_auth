@@ -10,7 +10,7 @@ import 'dotenv/config';
 export default defineConfig({
     out: './migration',
     schema: './src/lib/auth/schema.ts',
-    dialect: 'postgresql',
+    dialect: 'sqlite',
     dbCredentials: {
         url: process.env.DB!,
     },

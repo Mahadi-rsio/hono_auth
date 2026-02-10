@@ -29,10 +29,10 @@ export const jwtPlugin = (env: Env) =>
                     id: crypto.randomUUID(),
                     publicKey: data.publicKey,
                     privateKey: data.privateKey,
-                    createdAt: data.createdAt ?? new Date(),
+                    createdAt: data.createdAt,
                     expiresAt: data.expiresAt,
-                    alg: data.alg ?? 'EdDSA',
-                    crv: data.crv ?? 'Ed25519',
+                    alg: data.alg,
+                    crv: data.crv,
                 };
 
                 await redis.lpush(JWKS_KEY, JSON.stringify(jwk));
@@ -46,3 +46,9 @@ export const jwtPlugin = (env: Env) =>
             expirationTime: '7d',
         },
     });
+
+
+
+
+
+

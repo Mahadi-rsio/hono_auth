@@ -52,10 +52,6 @@ export const betterAuthOptions = (env: Env): BetterAuthOptions => {
             },
         },
 
-        emailAndPassword: {
-            enabled: true,
-        },
-
         socialProviders: {
             google: {
                 clientId: env.GOOGLE_CLIENT_ID,

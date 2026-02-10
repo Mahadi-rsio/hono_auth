@@ -9,5 +9,5 @@
         "jsxImportSource": "hono/jsx",
         "outDir": "./dist"
     },
-    "exclude": ["node_modules","worker-configuration.d.ts"]
+    "exclude": ["node_modules","@cloudflare/workers-types"]
 }

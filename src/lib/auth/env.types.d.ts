@@ -1,3 +1,5 @@
+
+
 export interface Env {
     ORIGIN: string;
 
@@ -17,6 +19,9 @@ export interface Env {
 
     DISCORD_CLIENT_ID: string;
     DISCORD_CLIENT_SECRET: string;
+
+    DB: D1Database;
+
 
     HI: string;
 }
